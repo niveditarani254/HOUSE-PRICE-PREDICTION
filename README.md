@@ -12,7 +12,7 @@ The project covers the complete Machine Learning workflow including data preproc
 
 Try the deployed application here:
 
-**https://your-streamlit-app-url.streamlit.app**
+**https://house-price-prediction-aiml-project.streamlit.app/**
 
 # 🎯 Problem Statement
 
