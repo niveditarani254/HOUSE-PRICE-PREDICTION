@@ -8,6 +8,12 @@ The project covers the complete Machine Learning workflow including data preproc
 
 ---
 
+## 🌐 Live Demo
+
+Try the deployed application here:
+
+**https://your-streamlit-app-url.streamlit.app**
+
 # 🎯 Problem Statement
 
 To build a machine learning model that can predict house prices based on different housing characteristics.
