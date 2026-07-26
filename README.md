@@ -102,7 +102,7 @@ The following visualizations were created:
 - Feature Histograms
 - Correlation Heatmap
 - Feature vs Price Scatter Plots
-- Residual Distribution Plot
+- Error by population Category Plot
 - Predicted vs Actual Price Plot
 
 ## Key Findings
