@@ -8,6 +8,12 @@ The project covers the complete Machine Learning workflow including data preproc
 
 ---
 
+## 🌐 Live Demo
+
+Try the deployed application here:
+
+**https://house-price-prediction-aiml-project.streamlit.app/**
+
 # 🎯 Problem Statement
 
 To build a machine learning model that can predict house prices based on different housing characteristics.
@@ -96,7 +102,7 @@ The following visualizations were created:
 - Feature Histograms
 - Correlation Heatmap
 - Feature vs Price Scatter Plots
-- Residual Distribution Plot
+- Error by population Category Plot
 - Predicted vs Actual Price Plot
 
 ## Key Findings
