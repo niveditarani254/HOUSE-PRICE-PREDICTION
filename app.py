@@ -18,6 +18,7 @@ model_path = os.path.join(
 )
 
 model = joblib.load(model_path)
+scaler = joblib.load("Model/scaler.pkl")
 
 # ADD TITLE
 st.title("🏠 USA House Price Prediction ")
@@ -78,15 +79,16 @@ if st.button("🔍 Predict Price"):
                     bedrooms,                         
                     population,
                     rooms_per_bedroom]])
-    prediction = model.predict(features)[0]
 
-    if prediction < 0:
-        st.error(
-            "⚠️ The entered values result in an unrealistic prediction. "
-            "Please use values closer to the training data distribution."
-        )
-    else:
-        st.success(f"🏠 Estimated House Price: ${prediction:,.2f}")
+features_scaled = scaler.transform(features)
+prediction = model.predict(features_scaled)[0]
+if prediction < 0:
+    st.error(
+        "⚠️ The entered values result in an unrealistic prediction. "
+        "Please use values closer to the training data distribution."
+    )
+else:
+    st.success(f"🏠 Estimated House Price: ${prediction:,.2f}")
 
 
 st.divider()
